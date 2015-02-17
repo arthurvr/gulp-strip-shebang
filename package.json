@@ -1,6 +1,6 @@
 {
   "name": "gulp-strip-shebang",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Gulp module to strip the shebang from a file",
   "keywords": [
     "strip",
