@@ -1,0 +1,32 @@
+{
+  "name": "gulp-strip-shebang",
+  "version": "0.0.0",
+  "description": "Gulp module to strip the shebang from a file",
+  "keywords": [
+    "strip",
+    "remove",
+    "shebang",
+    "unix",
+    "gulpplugin"
+  ],
+  "license": "MIT",
+  "author": "Arthur Verschaeve <contact@arthurverschaeve.be>",
+  "files": [
+    "index.js"
+  ],
+  "repository": "arthurvr/gulp-strip-shebang",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.3",
+    "strip-shebang": "^1.0.1",
+    "through2": "^0.6.3"
+  }
+}
