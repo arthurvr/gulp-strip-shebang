@@ -2,11 +2,13 @@
 
 > Gulp plugin for the [`strip-shebang`](https://github.com/sindresorhus/strip-shebang) module. Strips the shebang from a file.
 
+
 ## Install
 
 ```
 $ npm install --save-dev gulp-strip-shebang
 ```
+
 
 ## Usage
 
@@ -19,3 +21,7 @@ gulp.src('src/script.sh')
 	.pipe(gulp.dest('dist'));
 ```
 
+
+## License
+
+MIT © [Arthur Verschaeve](http://arthurverschaeve.be)
