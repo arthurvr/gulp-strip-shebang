@@ -1,5 +1,6 @@
 'use strict';
 var assert = require('assert');
+var path = require('path');
 var gutil = require('gulp-util');
 var stripShebang = require('./');
 
@@ -14,7 +15,7 @@ it('Should strip shebang', function (cb) {
 
 	stream.write(new gutil.File({
 		base: __dirname,
-		path: __dirname + '/file.ext',
+		path: path.join(__dirname, 'file.ext'),
 		contents: new Buffer('#!/bin/sh\nSomething')
 	}));
 
