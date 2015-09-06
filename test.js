@@ -1,17 +1,17 @@
 'use strict';
-var assert = require('assert');
+var test = require('ava');
 var path = require('path');
 var gutil = require('gulp-util');
 var stripShebang = require('./');
 
-it('Should strip shebang', function (cb) {
+test('Should strip shebang', function (t) {
+	t.plan(1);
+
 	var stream = stripShebang();
 
 	stream.on('data', function (file) {
-		assert.strictEqual(file.contents.toString(), '\nSomething');
+		t.is(file.contents.toString(), '\nSomething');
 	});
-
-	stream.on('end', cb);
 
 	stream.write(new gutil.File({
 		base: __dirname,

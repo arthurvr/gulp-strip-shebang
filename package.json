@@ -16,10 +16,10 @@
   ],
   "repository": "arthurvr/gulp-strip-shebang",
   "scripts": {
-    "test": "xo && mocha"
+    "test": "xo && ava"
   },
   "devDependencies": {
-    "mocha": "*",
+    "ava": "*",
     "xo": "*"
   },
   "engines": {
@@ -29,11 +29,5 @@
     "gulp-util": "^3.0.3",
     "strip-shebang": "^1.0.1",
     "through2": "^0.6.3"
-  },
-  "xo": {
-    "envs": [
-      "node",
-      "mocha"
-    ]
   }
 }
