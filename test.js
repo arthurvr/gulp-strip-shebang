@@ -1,13 +1,12 @@
-'use strict';
-var test = require('ava');
-var path = require('path');
-var gutil = require('gulp-util');
-var stripShebang = require('./');
+import test from 'ava';
+import path from 'path';
+import gutil from 'gulp-util';
+import stripShebang from './';
 
-test('Should strip shebang', function (t) {
+test('Should strip shebang', t => {
 	t.plan(1);
 
-	var stream = stripShebang();
+	const stream = stripShebang();
 
 	stream.on('data', function (file) {
 		t.is(file.contents.toString(), '\nSomething');
