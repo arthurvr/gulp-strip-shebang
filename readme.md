@@ -13,8 +13,8 @@ $ npm install --save-dev gulp-strip-shebang
 ## Usage
 
 ```js
-var gulp = require('gulp');
-var stripShebang = require('gulp-strip-shebang');
+const gulp = require('gulp');
+const stripShebang = require('gulp-strip-shebang');
 
 gulp.src('src/script.sh')
 	.pipe(stripShebang())
